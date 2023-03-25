@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(244, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 400px;
+    min-height: 60%;
+    background-color: white;
+    border-radius:1rem;
+    padding: 1rem; 
+}
+form>h1{
+    text-align: center;
+}
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%; 
+    margin: 1rem 0;
+}
+.form-inputs input, .form-inputs label, .form-inputs>button, .check-box-container>label{
+    height: 2rem;
+    font-size: 20px;
+
+}
+.form-inputs label{
+    font-weight: 700;
+}
+.form-inputs>button{
+    background-color:  cadetblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.check-box-container input{
+    margin-right:0.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.forgot>p{
+ text-align: right;
+}
