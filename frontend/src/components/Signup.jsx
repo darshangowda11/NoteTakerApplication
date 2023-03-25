@@ -52,8 +52,9 @@ function Signup(props) {
                     </label>
                 </div>
                 <div className='form-inputs'>
-                    <button >Continue</button>
+                    <button type="submit" >Continue</button>
                 </div>
+                
                 <div className='forgot'>
                     <Link to={"/"}>Go TO Sign IN</Link>
                 </div>

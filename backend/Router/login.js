@@ -13,7 +13,7 @@ router.post("/login", async(req, res)=>{
     
     if(!isData){
         return res.status(401).json({
-            error:"Email no registerd"
+            error:"Email not registerd"
         })
     }
     bcrypt.compare(password, isData.password, (err, result)=>{

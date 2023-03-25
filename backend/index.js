@@ -12,7 +12,7 @@ dotEnv.config()
 const main = async()=>{
     try{
         await mongoose.connect(process.env.DATABASE_URL)
-        console.log("database connected to data base")
+        console.log("database connected to clouddb")
     }catch(e){
         console.log(e)
     }
@@ -31,6 +31,6 @@ app.listen(process.env.PORT, (err)=>{
     if(err){
         console.log(err)
     }else{
-        console.log("data base Connect to the ", process.env.PORT)
+        console.log("server running at port ", process.env.PORT)
     }
 })
