@@ -54,7 +54,7 @@ function Signin(props) {
                 </div>
                 <div className='forgot'>
                     <p>Forgot<span style={{color:"blue"}}>password?</span></p>
-                    <Link to={"/signup"}>Go TO Sign Up</Link>
+                    <Link to={"/signup"}>Sign Up</Link>
                 </div>
             </form>
         </div>

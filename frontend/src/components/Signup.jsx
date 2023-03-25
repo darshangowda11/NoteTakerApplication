@@ -13,7 +13,7 @@ function Signup(props) {
             return alert("password and confirm password must be matched")
         }
         else{
-           fetch("https://clean-headscarf-calf.cyclic.app/v1/register", {
+           fetch("https://localhost:5000/v1/register", {
             method:"post",
             headers: {
                 'Accept': 'application/json',
@@ -48,10 +48,11 @@ function Signup(props) {
                 </div>
                 <div className='check-box-container'>
                     <input type="checkbox" id='check' onChange={(e)=>setRem((old)=>{return (old==="off")?"on":"off"})} required/>
-                    <label htmlFor="ckeck">Remember</label>
+                    <label htmlFor="ckeck">i agree with TERMS AND CONDITIONS
+                    </label>
                 </div>
                 <div className='form-inputs'>
-                    <button >Submit</button>
+                    <button >Continue</button>
                 </div>
                 <div className='forgot'>
                     <Link to={"/"}>Go TO Sign IN</Link>
